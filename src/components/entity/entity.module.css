@@ -1,0 +1,22 @@
+.head {
+    background-color: lightblue;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px 5px 0px 0px;
+    padding: 10px 10px 10px 15px;
+    cursor: move;
+}
+
+.body {
+    background-color: lightyellow;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    border: none;
+    border-radius: 0px 0px 5px 5px;
+    width: 115px;
+    padding: 15px;
+    cursor: move;
+}
