@@ -1,7 +1,7 @@
 > [!NOTE]
 > **Used software versions:**
 > - operating system: Ubuntu 23.10
-> - browser: Google Chrome
+> - Google Chrome: Version 122.0.6261.111 (Official Build) (64-bit)
 > - docker version: 25.0.4
 > - docker-compose version: 1.25.0
 
@@ -26,4 +26,4 @@ docker-compose up
 
 Enter [http://127.0.0.1:3000](http://127.0.0.1:3000) to the browser URL bar.
 
-![Screenshot from 2024-03-11 12-01-09](https://github.com/MaximEYakovlev/ERD-editor/assets/61206936/7735304e-582d-47c0-b5c9-62c550350c1a)
+![Screenshot from 2024-03-12 03-24-01](https://github.com/MaximEYakovlev/ERD-editor/assets/61206936/bd2a44b2-201c-4214-bbbc-b2e1d7987686)
