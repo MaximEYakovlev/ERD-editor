@@ -1,29 +1,28 @@
 import { v4 as uuidv4 } from 'uuid';
-import entities from '../data/erd.json';
 
-export const objectToArray = () => {
-    const resultArray = [];
+export const objectToArray = (object) => {
+    const array = [];
     const initialCoordinates = [];
 
-    for (const key in entities) {
-        const object = {
+    for (const key in object) {
+        const newObject = {
             name: key,
             attributes: [],
         };
 
-        const nestedObject = entities[key];
+        const nestedObject = object[key];
 
         for (const key in nestedObject) {
-            object.attributes.push({
+            newObject.attributes.push({
                 id: uuidv4(),
                 name: key,
                 type: nestedObject[key],
             });
         }
 
-        resultArray.push(object);
+        array.push(newObject);
         initialCoordinates.push({ x: 0, y: 0 });
     }
 
-    return [resultArray, initialCoordinates];
+    return [array, initialCoordinates];
 };

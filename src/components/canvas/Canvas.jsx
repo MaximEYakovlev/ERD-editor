@@ -1,10 +1,9 @@
 import { useState } from 'react';
 import { useSetEntitiesList } from '../../hooks/useSetEntitiesList';
-
 import { Entity } from '../entity/Entity';
 import { Button } from '../sharedComponents/button/Button';
 import { handleClick } from '../../utils/handleClick';
-
+import data from '../../data/erd.json';
 import styles from './canvas.module.css';
 import * as CONSTANTS from '../../constants/constants';
 
@@ -14,7 +13,7 @@ export const Canvas = () => {
     const [coordinates, setCoordinates] = useState([]);
     const [associations, setAssociations] = useState([]);
 
-    useSetEntitiesList(setList, setCoordinates);
+    useSetEntitiesList(data, setList, setCoordinates);
 
     return (
         <>

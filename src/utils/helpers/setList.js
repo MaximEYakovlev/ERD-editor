@@ -2,14 +2,9 @@ import { v4 as uuidv4 } from 'uuid';
 import { exist } from './exist';
 import * as CONSTANTS from '../../constants/constants';
 
-export const setList = ({
-    e,
-    index,
-    list,
-    setList,
-    associations,
-    setAssociations,
-}) => {
+export const setList = (args) => {
+    const { e, index, list, setList, associations, setAssociations } = args;
+
     try {
         const data = e.dataTransfer.getData(CONSTANTS.CONTENT_TYPE);
         const {
