@@ -3,9 +3,9 @@ import { objectToArray } from '../utils/objectToArray';
 
 export const useSetEntitiesList = (data, setList, setCoordinates) => {
     useEffect(() => {
-        const [resultArray, initialCoordinates] = objectToArray(data);
+        const [list, coordinates] = objectToArray(data);
 
-        setList(resultArray);
-        setCoordinates(initialCoordinates);
+        setList(list);
+        setCoordinates(coordinates);
     }, []);
 };
